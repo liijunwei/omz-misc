@@ -2,7 +2,7 @@
 
 function gem-search-local() {
   gem list -l |
-  awk '{print $1}' |
   fzf |
+  awk '{print $1}' |
   xargs -I {} open "https://rubygems.org/search?query={}"
 }
