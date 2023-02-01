@@ -41,6 +41,8 @@ function expense_print_help {
 function add {
   if [ $# -eq 0 ]; then
     expense_print_help;
+    # ./sensitive-exports.sh
+    rsync -azP $EXPENCE_NOTE_FILE_PATH webuser@xiaoli:$ECS_EXPENCE_NOTE_FILE_PATH
     return 1;
   fi
 
