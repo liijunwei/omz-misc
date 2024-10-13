@@ -1,7 +1,6 @@
 require 'pry'
 
 require_relative './parse-github-contributions'
-require_relative './parse-gitlab-contributions'
 
 filepath_gitlab = "#{ENV["HOME"]}/Documents/notebook/tmp/tmp-gitlab.svg"
 result_gitlab = GitlabContribCalendarParser.new.run(filepath_gitlab).map{|hash| hash[:data_count]}.sum
