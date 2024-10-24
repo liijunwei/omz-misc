@@ -1,12 +1,12 @@
 #!/bin/bash
 
 function proxy_on(){
-    # export http_proxy=http://127.0.0.1:61844
-    # export https_proxy=http://127.0.0.1:61844
-    # export all_proxy=socks5://127.0.0.1:61844
-    export http_proxy=http://127.0.0.1:7890
-    export https_proxy=http://127.0.0.1:7890
-    export all_proxy=socks5://127.0.0.1:7890
+    export http_proxy=http://127.0.0.1:61844
+    export https_proxy=http://127.0.0.1:61844
+    export all_proxy=socks5://127.0.0.1:61844
+    # export http_proxy=http://127.0.0.1:7890
+    # export https_proxy=http://127.0.0.1:7890
+    # export all_proxy=socks5://127.0.0.1:7890
     echo -e "proxy enabled..."
 }
 
